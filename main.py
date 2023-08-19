@@ -13,7 +13,7 @@ app.config['SECRET_KEY'] = os.environ.get("SECRET_KEY")
 app.app_context().push()
 Bootstrap(app)
 db_path = os.path.join(os.path.dirname(__file__),
-                       'pythonProject-day-64-top -movies/top-movies.db')
+                       'pythonProject-day-64-top-movies/top-movies.db')
 db_uri = 'sqlite:///{}'.format(db_path)
 app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
